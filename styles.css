@@ -105,3 +105,41 @@ button {
         transform: translateY(0);
     }
 }
+
+@media (max-width: 480px) {
+    .container {
+        padding: 25px 20px;
+        width: 95%;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    .question {
+        font-size: 20px;
+    }
+
+    input {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    button {
+        font-size: 16px;
+        padding: 12px 18px;
+    }
+
+    .buttons {
+        height: 180px;
+    }
+
+    .yes-btn,
+    .no-btn {
+        min-width: 120px;
+    }
+
+    .final-message {
+        font-size: 22px;
+    }
+}

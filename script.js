@@ -13,8 +13,9 @@ function submitName() {
         `Hi, ${name} 💖\nWould you like to be my Valentine?`;
 }
 
-noBtn.addEventListener("mouseenter", () => {
+function moveNoButton() {
     const container = document.querySelector(".container");
+
     const maxX = container.clientWidth - noBtn.offsetWidth;
     const maxY = container.clientHeight - noBtn.offsetHeight;
 
@@ -24,9 +25,14 @@ noBtn.addEventListener("mouseenter", () => {
     noBtn.style.left = randomX + "px";
     noBtn.style.top = randomY + "px";
 
-    yesScale += 0.1;
+    yesScale += 0.12;
     yesBtn.style.transform = `scale(${yesScale})`;
-});
+}
+
+
+noBtn.addEventListener("mouseenter", moveNoButton);
+noBtn.addEventListener("touchstart", moveNoButton);
+noBtn.addEventListener("click", moveNoButton);
 
 function sayYes() {
     document.getElementById("screen2").style.display = "none";
