@@ -1,0 +1,107 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Comic Sans MS', 'Poppins', cursive;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    background: #fff;
+    padding: 30px 40px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    position: relative;
+    width: 90%;
+    max-width: 400px;
+}
+
+h1 {
+    color: #ff4d6d;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #333;
+}
+
+input {
+    padding: 10px;
+    width: 80%;
+    border-radius: 10px;
+    border: 2px solid #ff4d6d;
+    outline: none;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.submit-btn {
+    background: #ff4d6d;
+    color: white;
+}
+
+.question {
+    font-size: 22px;
+    color: #ff4d6d;
+    margin-bottom: 30px;
+}
+
+.buttons {
+    position: relative;
+    height: 150px;
+}
+
+.yes-btn {
+    background: #ff4d6d;
+    color: white;
+    margin-right: 10px;
+}
+
+.no-btn {
+    background: #ccc;
+    color: #333;
+    position: absolute;
+}
+
+.final-message {
+    font-size: 24px;
+    color: #ff4d6d;
+}
+
+.heart {
+    font-size: 40px;
+    animation: float 1.5s infinite ease-in-out;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
